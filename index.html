@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <title>Menú App</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Aquí colocas el logo, cambia la ruta de la imagen por la de tu logo -->
+            <a class="navbar-brand" href="#">Menú App </a>
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#menu">Obtén tu menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portafolio.html">Nuestro portafolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <header class="text-center p-5 bg-light">
+        <h1>Menús digitales para restaurantes y negocios de comidas rápidas</h1>
+        <p class="subtitulo"></p>
+    </header>
+
+    <main>
+
+    <div class="container text-center mt-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./image/LogotipoDigital.gif" class="d-block w-100" alt="Plato 3">
+                </div>
+                <div class="carousel-item active">
+                    <img src="./image/QR-donde-el-mocho.png" class="d-block w-100" alt="Plato 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/QR-ahumados.png" class="d-block w-100" alt="Plato 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/QR-Siete-Sabores.png" class="d-block w-100" alt="Plato 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <section id="beneficios" class="container text-center my-5">
+        <h2 class="mb-4">Beneficios de nuestro Menú Digital</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                <h5>Accesible</h5>
+                <p>Disponible desde cualquier dispositivo con solo escanear un código QR.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-sync-alt fa-3x mb-3"></i>
+                <h5>Fácil de actualizar</h5>
+                <p>Cambia precios y platillos sin necesidad de imprimir nuevos menús.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-leaf fa-3x mb-3"></i>
+                <h5>Eco-Amigable</h5>
+                <p>Reduce el uso de papel y contribuye al medio ambiente.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contacto" class="container py-5">
+        <h2 class="section-title text-center">Contáctanos</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label" >Nombre:</label>
+                <input type="text" class="form-control" id="name" name="name" required placeholder="Escribe aquí tu nombre y apellido.">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Escribe aquí tu correo.">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Escribe aquí tu mensaje y luego preciona enviar."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <div class="fixed-bottom text-end p-3">
+       
+        <a href="https://wa.me/+573192364724" class="btn btn-success" target="_blank"> <img src="./image/whatsaap (2).png" alt="image" style="width: 25px;"></a>
+    </div>
+</main>
+
+<footer class="footer bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Menú App - una aplicación de ToySoft. Todos los derechos reservados.
+        <br>Emil Jiménez - Desarrollador Web 
+    </p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
